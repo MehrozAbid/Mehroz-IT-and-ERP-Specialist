@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehroz Abid | Senior Odoo Functional Consultant & ERP Specialist</title>
+    <!-- Tailwind CSS for high-end styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for professional iconography -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.2);
+            border-color: rgba(59, 130, 246, 0.4);
+            transition: all 0.4s ease;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Interactive Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-gray-800 backdrop-blur-md">
+        <div class="max-w-7xl px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4 mx-auto">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    MA
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight text-white">Mehroz Abid</h1>
+                    <p class="text-xs text-blue-400 font-mono">ERP Architecture & Logic</p>
+                </div>
+            </div>
+            <nav class="flex items-center gap-6 text-sm font-medium text-gray-400">
+                <a href="#profile" class="hover:text-blue-400 transition-colors">Profile</a>
+                <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Expertise</a>
+                <a href="#contact" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition-all shadow-md shadow-blue-900/30">Hire Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Hero Section -->
+        <section id="profile" class="grid grid-cols-1 lg:grid-cols-3 gap-8 pt-6">
+            <div class="lg:col-span-2 space-y-6 flex flex-col justify-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono w-fit">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    Iqama Transferable Valid & Ready
+                </div>
+                <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Bridging <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">System Logic</span> <br>With Business Strategy.
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl leading-relaxed">
+                    My professional background began as an Oracle Technical Consultant, providing a deep foundation in ERP architecture and database logic. Transitioning into Odoo Functional Consulting, I combine this technical depth with business strategy to map complex requirements into efficient v17/v18/v19 workflows.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <div class="flex items-center gap-2 bg-gray-900/60 border border-gray-800 px-4 py-2 rounded-xl text-sm text-gray-300">
+                        <i class="fa-solid fa-location-dot text-blue-400"></i> Jeddah, Saudi Arabia (Can Relocate)
+                    </div>
+                    <div class="flex items-center gap-2 bg-gray-900/60 border border-gray-800 px-4 py-2 rounded-xl text-sm text-gray-300">
+                        <i class="fa-solid fa-car text-blue-400"></i> Valid Driving License
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Cards Side Grid -->
+            <div class="space-y-4">
+                <div class="glass-card p-6 rounded-2xl glow-effect space-y-4">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-blue-400 font-mono">Core Capabilities</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-blue-500 mt-1 text-xs"></i>
+                            <span><strong>Strategic Mapping:</strong> Scalable Odoo workflows across Manufacturing, Supply Chain, & Finance.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-blue-500 mt-1 text-xs"></i>
+                            <span><strong>Technical Liaison:</strong> Customizations overseen strictly adhering to Odoo Best Practices.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-blue-500 mt-1 text-xs"></i>
+                            <span><strong>Operational Impact:</strong> Legacy data migrations & process automation in KSA markets.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl glow-effect">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-blue-400 font-mono mb-3">Education</h3>
+                    <p class="font-bold text-white text-base">Bachelors in Computer Science</p>
+                    <p class="text-sm text-gray-400">NCBA&E Lahore</p>
+                    <p class="text-xs text-gray-500 font-mono mt-1">Feb 2018 - Feb 2022</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-900">
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="space-y-12">
+            <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Professional Experience</h2>
+                <p class="text-gray-400 text-sm">A documented history of technical execution and enterprise resource optimization.</p>
+            </div>
+
+            <div class="relative border-l-2 border-gray-800 ml-4 space-y-12">
+                
+                <!-- NEW LATEST EXPERIENCE: The Invisible Kitchen -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 bg-blue-500 h-4 w-4 rounded-full border-4 border-[#0b0f19] group-hover:bg-indigo-400 transition-colors"></div>
+                    <div class="glass-card p-6 rounded-2xl glow-effect space-y-4">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 uppercase tracking-widest font-bold">Latest Role</span>
+                                <h3 class="text-xl font-bold text-white mt-1">IT Specialist & ERP Systems Administrator</h3>
+                                <p class="text-md text-blue-400 font-medium">The Invisible Kitchen <span class="text-gray-500 font-normal">|</span> Invisible Yard Branches (https://invisibleyard.com)</p>
+                            </div>
+                            <div class="text-left md:text-right">
+                                <span class="inline-block px-3 py-1 bg-gray-900 border border-gray-800 rounded-lg text-xs font-mono text-gray-400 mb-1">Present</span>
+                                <p class="text-xs text-gray-500"><i class="fa-solid fa-map-pin mr-1"></i> Jeddah, KSA</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Spearheading IT infrastructure operations and digital touchpoint ecosystems across the group's flagship fine-dining networks, corporate kitchens, and retail locations—specifically optimizing cross-branch data synchronizations for the expanding <strong>Invisible Yard</strong> concepts.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 text-sm text-gray-400">
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-xs uppercase tracking-wider text-blue-400 font-mono">Cross-Branch ERP Architecture</h4>
+                                <p class="text-xs">Centralized multi-company operations management linking front-of-house operational nodes with backend warehouse distribution databases.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-xs uppercase tracking-wider text-blue-400 font-mono">Infrastructure Resilience</h4>
+                                <p class="text-xs">Deploying and optimizing secure POS integration hardware and cloud analytics across all regional branches to maximize digital transaction up-time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kaspar Consulting -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 bg-gray-700 h-4 w-4 rounded-full border-4 border-[#0b0f19] group-hover:bg-blue-500 transition-colors"></div>
+                    <div class="glass-card p-6 rounded-2xl glow-effect space-y-4">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Odoo Functional Consultant</h3>
+                                <p class="text-md text-blue-400 font-medium">Kaspar Consulting</p>
+                            </div>
+                            <div class="text-left md:text-right">
+                                <span class="inline-block px-3 py-1 bg-gray-900 border border-gray-800 rounded-lg text-xs font-mono text-gray-400 mb-1">Feb 2025 - Jan 2026</span>
+                                <p class="text-xs text-gray-500"><i class="fa-solid fa-globe mr-1"></i> Remote, South Africa</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-300 list-disc list-inside">
+                            <li>Orchestrated full-cycle Odoo deployments (v17 & v18), substituting decentralized systems with a unified visibility framework.</li>
+                            <li>Designed workflows across Sales, CRM, Purchase, Inventory, Manufacturing, Accounting, POS, and Project Management.</li>
+                            <li>Configured complex automated cost-tracking and multi-step routing architectures for high-volume import businesses in Kuwait.</li>
+                            <li>Engineered analytical accounting structures and analytical modules tailored to service environments in KSA.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SOS Pakistan -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 bg-gray-700 h-4 w-4 rounded-full border-4 border-[#0b0f19] group-hover:bg-blue-500 transition-colors"></div>
+                    <div class="glass-card p-6 rounded-2xl glow-effect space-y-4">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Odoo Functional Consultant & Head of Manager Implementation</h3>
+                                <p class="text-md text-blue-400 font-medium">Security Organizing System Pakistan Pvt. Ltd.</p>
+                            </div>
+                            <div class="text-left md:text-right">
+                                <span class="inline-block px-3 py-1 bg-gray-900 border border-gray-800 rounded-lg text-xs font-mono text-gray-400 mb-1">Jan 2023 - Dec 2024</span>
+                                <p class="text-xs text-gray-500"><i class="fa-solid fa-map-pin mr-1"></i> Multan, Pakistan</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300">
+                            Successfully deployed Odoo Enterprise across AB Medicals operations, boosting productivity by 90% via structured product routing configuration. Promptly promoted to Head of Managers Implementation for the CIT mobile apps and software pipeline.
+                        </p>
+                        <div class="pt-2">
+                            <span class="text-xs font-bold uppercase text-blue-400 font-mono block mb-1">Engineered Web Projects:</span>
+                            <div class="flex flex-wrap gap-3 text-xs font-mono">
+                                <a href="http://www.abmedicals.com" target="_blank" class="text-gray-400 hover:text-white underline">www.abmedicals.com</a>
+                                <a href="http://www.blueniles.ae" target="_blank" class="text-gray-400 hover:text-white underline">www.blueniles.ae</a>
+                                <a href="http://www.sospakistan.com" target="_blank" class="text-gray-400 hover:text-white underline">www.sospakistan.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yazisoft -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 bg-gray-700 h-4 w-4 rounded-full border-4 border-[#0b0f19] group-hover:bg-blue-500 transition-colors"></div>
+                    <div class="glass-card p-6 rounded-2xl glow-effect">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Software Engineer / Web Developer</h3>
+                                <p class="text-md text-blue-400 font-medium">Yazisoft Software Solutions</p>
+                            </div>
+                            <div class="text-left md:text-right">
+                                <span class="inline-block px-3 py-1 bg-gray-900 border border-gray-800 rounded-lg text-xs font-mono text-gray-400 mb-1">Feb 2020 - Jun 2022</span>
+                                <p class="text-xs text-gray-500"><i class="fa-solid fa-map-pin mr-1"></i> Multan, Pakistan</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Built and optimized highly responsive web apps using HTML5, CSS3, JavaScript, React.js, Laravel, and WordPress/Elementor. Created scalable relational databases (MySQL, PostgreSQL) while deploying applications on secure AWS cloud architecture infrastructure.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Legacy Tech Experience Drawer (Collapsible concept) -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 bg-gray-800 h-4 w-4 rounded-full border-4 border-[#0b0f19]"></div>
+                    <div class="p-4 bg-gray-900/40 rounded-xl border border-gray-800/60 text-xs text-gray-400 flex justify-between items-center">
+                        <div>
+                            <strong>Earlier Experience:</strong> Software Engineer (Oracle Technical Consultant) at Challenge Apparels LTD & US Apparels & Textiles (2022).
+                        </div>
+                        <span class="font-mono text-[10px] bg-gray-800 px-2 py-0.5 rounded text-gray-500">SQL / PL-SQL / TOAD</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-gray-900">
+
+        <!-- Skills Grid Matrix -->
+        <section id="skills" class="space-y-12">
+            <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Technical Core Competency Matrix</h2>
+                <p class="text-gray-400 text-sm">Granular categorization of platforms, technical modules, and engineering tools.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 border-t-2 border-t-blue-500">
+                    <div class="text-blue-400 text-2xl"><i class="fa-solid fa-cubes"></i></div>
+                    <h3 class="text-lg font-bold text-white">Odoo Mastery</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">Odoo Enterprise/SH</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">v17 / v18 / v19</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">Odoo Studio</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">Inventory/Routing</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">GCC Localization</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 border-t-2 border-t-indigo-500">
+                    <div class="text-indigo-400 text-2xl"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-lg font-bold text-white">Engineering & Development</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">HTML5 / CSS3</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">JavaScript</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">React.js / Laravel</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">WordPress / Elementor</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">Python Basics</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 border-t-2 border-t-purple-500">
+                    <div class="text-purple-400 text-2xl"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="text-lg font-bold text-white">Databases & Architecture</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">Oracle SQL / PL-SQL</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">PostgreSQL / MySQL</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">Stored Procedures</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">AWS / Cloud</span>
+                        <span class="px-2 py-1 bg-gray-900 border border-gray-800 text-xs font-mono rounded text-gray-300">Data Migration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-900">
+
+        <!-- Contact Section -->
+        <section id="contact" class="glass-card rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto space-y-6 border border-gray-800 shadow-2xl relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent pointer-events-none"></div>
+            <h2 class="text-3xl font-extrabold text-white">Let's Discuss Your Next Deployment</h2>
+            <p class="text-gray-400 text-base max-w-xl mx-auto">
+                Seeking immediate-start opportunities within the Kingdom of Saudi Arabia or global high-scale remote consulting scopes. 
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 pt-4 text-sm font-mono">
+                <a href="https://wa.me/966541418872" class="flex items-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition-all shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> +966 54 141 8872
+                </a>
+                <a href="mailto:mehrozabid.ma@gmail.com" class="flex items-center gap-2 px-4 py-3 bg-gray-900 hover:bg-gray-800 text-gray-200 border border-gray-800 rounded-xl transition-all">
+                    <i class="fa-solid fa-envelope text-blue-400"></i> mehrozabid.ma@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/mehroz-a-b596a21b8" target="_blank" class="flex items-center gap-2 px-4 py-3 bg-gray-900 hover:bg-gray-800 text-gray-200 border border-gray-800 rounded-xl transition-all">
+                    <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn Profile
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 py-8 mt-12 border-t border-gray-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-gray-500">
+        <p>&copy; 2026 Mehroz Abid. Engineered using clean HTML5 / Canvas API architectures.</p>
+        <p>Jeddah, Kingdom of Saudi Arabia</p>
+    </footer>
+
+    <!-- Interactive Network Node Background Script (Pure HTML5 Canvas Architecture) -->
+    <script>
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let particleArray = [];
+        let mouse = { x: null, y: null, radius: 150 };
+
+        window.addEventListener('mousemove', function(e) {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+
+        window.addEventListener('mouseout', function() {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        }
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+            update() {
+                if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+                if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+                
+                // Mouse interaction node avoidance logic
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx*dx + dy*dy);
+                if (distance < mouse.radius + this.size) {
+                    if (mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 2;
+                    if (mouse.x > this.x && this.x > this.size * 10) this.x -= 2;
+                    if (mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 2;
+                    if (mouse.y > this.y && this.y > this.size * 10) this.y -= 2;
+                }
+                this.x += this.directionX * 0.7;
+                this.y += this.directionY * 0.7;
+                this.draw();
+            }
+        }
+
+        function initParticles() {
+            particleArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 14000;
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 2) + 1;
+                let x = (Math.random() * ((innerWidth - size * 2) - size * 2)) + size * 2;
+                let y = (Math.random() * ((innerHeight - size * 2) - size * 2)) + size * 2;
+                let directionX = (Math.random() * 2) - 1;
+                let directionY = (Math.random() * 2) - 1;
+                let color = 'rgba(59, 130, 246, 0.18)';
+                particleArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        function connectParticles() {
+            let opacityValue = 1;
+            for (let a = 0; a < particleArray.length; a++) {
+                for (let b = a; b < particleArray.length; b++) {
+                    let distance = ((particleArray[a].x - particleArray[b].x) * (particleArray[a].x - particleArray[b].x))
+                                 + ((particleArray[a].y - particleArray[b].y) * (particleArray[a].y - particleArray[b].y));
+                    if (distance < (canvas.width/7) * (canvas.height/7)) {
+                        opacityValue = 1 - (distance/20000);
+                        ctx.strokeStyle = `rgba(99, 102, 241, ${opacityValue * 0.12})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particleArray[a].x, particleArray[a].y);
+                        ctx.lineTo(particleArray[b].x, particleArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0,0, innerWidth, innerHeight);
+            for (let i = 0; i < particleArray.length; i++) {
+                particleArray[i].update();
+            }
+            connectParticles();
+        }
+
+        resizeCanvas();
+        animate();
+    </script>
+</body>
+</html>
